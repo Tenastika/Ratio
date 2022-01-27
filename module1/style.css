@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Black.eot");
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Black.woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Bold.eot");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Medium.eot");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Medium.woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Regular.eot");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Norms';
+  src: url("assets/fonts/TTNorms-Regular.woff");
+  font-weight: 400;
+}
+
+:root {
+  --dark-grey: #4B5D68;
+  --dark-purp: #212353;
+  --violet: #9C69E2;
+  --pink: #F063B8;
+  --green: #68C9BA;
+  --blue: ##2D9CDB
+}
+
+
+body {
+  margin: 0 auto;
+  font: 500 18px/28.8px 'Norms';
+  background-color: #E5E5E5;
+  color: var(--dark-grey);
+  
+}
+
+a {
+  transition: all 0.4s;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  background: linear-gradient(#F6FAFD, #FFFFFF) ;
+  padding: 50px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+      padding: 30px 20px;
+    }
+}
+
+.header-container {
+display: flex;
+padding-top: 15px;
+}
+
+.logo {
+  margin-right: 120px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo img {
+  display: block;
+  margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: 30px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  font: 500 16px/25px 'Norms';
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 25px; 
+  }
+}
+
+.nav-item {
+  display: flex;
+}
+
+
+.nav-list a:hover {
+  text-shadow: 0 0 .5px var(--dark-purp), 0 0 .5px var(--dark-purp);
+  color: var(--dark-purp);
+}
+
+.company-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1050px) {
+  .company-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+}
+
+h1 {
+  font: 700 80px/88px 'Helvetica';
+  color: var(--dark-purp);
+  width: 60%;
+  margin-bottom: 50px;
+}
+@media (max-width: 1050px) {
+  h1 {
+    font: 700 60px/66px 'Helvetica';
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font: 700 50px/54px 'Helvetica';
+    width: 100%;
+    margin-bottom: 20px;
+  } 
+}
+
+
+.company-text {
+  width: 33%;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1050px) {
+  .company-text {
+    width: 43%;
+    margin-bottom: 60px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .company-text {
+    width: 50%;
+    margin-bottom: 60px;
+  } 
+}
+
+a.company-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 60px;
+  background-color: var(--violet);
+  border-radius: 50px;
+  color: #FFFFFF;
+}
+.company-img {
+ position: absolute;
+ display: block;
+  bottom: 0;
+  right: -8%;
+  width: 74%;
+  
+}
+
+@media (max-width: 1430px) {
+  .company-img {
+    position: absolute;
+    display: block;
+     bottom: 0;
+     right: 2%;
+     width: 65%;
+     
+   }
+}
+
+
