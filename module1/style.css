@@ -19,7 +19,7 @@ a {
 }
 
 .wrapper {
-  overflow-x: hidden;
+ 
   max-width: 1600px;
   height: 100%;
   margin: 0 auto;
@@ -234,6 +234,7 @@ a.company__btn {
 
 .about__container {
   position: relative;
+  margin-bottom: 50px;
 }
 
 .about__bg {
@@ -292,11 +293,12 @@ a.company__btn {
 
 .features__container {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .features__subtitle {
   max-width: 585px;
-  margin: 0 auto 100px;
+  margin: 0 auto 110px;
 }
 
 .features__cards {
@@ -310,9 +312,10 @@ a.company__btn {
   
   max-width: 50%;
   display: flex;
-  gap: 30px;
+  gap: 35px;
   text-align: left;
   padding: 60px 40px 30px 0;
+  margin-bottom: 10px;
 }
 
 .card:nth-child(1) {
@@ -340,6 +343,7 @@ a.company__btn {
 }
 .card__title {
   font: 400 24px/31px "Helvetica";
+  color: var(--dark-purp);
   margin-bottom: 20px;
 }
 .card__text {
@@ -348,11 +352,15 @@ a.company__btn {
 }
 
 .card__link {
+  
+  margin-right: 10px;
  width: 130px;
   margin-top: auto;
 }
 
 .card__link-txt {
+  color: var(--dark-purp);
+  font: 900 16px/26px "Ubuntu";
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -362,6 +370,7 @@ a.company__btn {
 .card__link-txt::after {
   content: "";
   position: absolute;
+  top: 6px;
   right: 0;
   width: 20px;
   height: 15px;
@@ -433,7 +442,7 @@ a.company__btn {
   }
 
   .features__cards {
-    gap: 20px;
+    gap: 30px;
   }
 
   .card {
@@ -465,7 +474,184 @@ a.company__btn {
 
 @media (max-width: 425px) {
   .card {
-    height: 900%;
-   
+    height: 90%;
+   gap: 0;
   }
 }
+
+/*=============================== testimonials ==================================*/
+
+.testimonials {
+  overflow: hidden;
+}
+.testimonials__container {
+}
+
+.testimonials__bg {
+  background-color: var(--violet);
+  max-width: 1118px;
+  border-radius: 50px;
+  padding: 110px 90px 60px 90px; 
+}
+
+.testimonials__title {
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.testimonials__slider {
+}
+
+.container {
+}
+.section-title {
+}
+.slider {
+ position: relative;
+ display: flex; 
+  height: 400px;
+  
+}
+
+.slider__wrapper {
+  position: absolute;
+ display: flex;
+ flex-wrap: nowrap;
+ align-items: stretch;
+}
+.slide {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 55px 55px 55px 40px;
+  margin-right: 20px;
+  border: 1px solid var(--violet);
+  box-shadow: 0 20px 0 0  rgba(81, 53, 121, 0.1);
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+}
+
+.slide._active {
+  width: 645px;
+  padding: 60px 67px 50px 70px;
+  box-shadow: 0 20px 0 0  rgba(61, 40, 90, 0.294);
+}
+
+.slide._active::after {
+  display: none;
+}
+
+.slide__img {
+}
+
+.slide__content {
+}
+
+.slide__title {
+  font: 900 18px/29px "Ubuntu";
+  color: var(--dark-purp);
+}
+
+.slide__subtitle {
+  display: block;
+  font: 500 14px/22px "Ubuntu";
+  color: var(--violet);
+  margin-bottom: 20px;
+}
+
+.slide__text {
+  font: 400 18px/32px "Ubuntu";
+}
+
+.slider__btns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+margin: auto auto 0;
+}
+
+.slider__pang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 60px; 
+}
+.pang {
+  width: 5px;
+  height: 5px;
+  background-color: #fff; 
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pang._active{
+  width: 10px;
+  height: 10px;
+  background-color: var(--pink); 
+  border-radius: 50%;
+}
+.slider__navig {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+.prev {
+  background: url(./assets/testimonials/img/slide-ar-prev.svg)center center / contain no-repeat;
+  width: 40px;
+  height: 15px;
+  cursor: pointer;
+}
+.next {
+  background: url(./assets/testimonials/img/slide-ar-next.svg)center center / contain no-repeat;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .testimonials__bg {
+    padding: 80px 50px 40px ; 
+  }
+}
+
+@media (max-width: 768px) {
+  .slide._active {
+    padding:30px 20px ;  
+  }
+  .testimonials__bg {
+    padding: 50px 20px 30px ; 
+  }
+}
+
+@media (max-width: 425px) {
+  .slide {
+    flex-direction: column;
+    max-width: 240px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .slider {
+    position: relative;
+    display: flex; 
+     height: 550px;
+     
+   }
+  
+}
+  
+
