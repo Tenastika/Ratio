@@ -1,80 +1,17 @@
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Black.eot");
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Black.ttf");
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Black.woff");
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Bold.eot");
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Bold.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Bold.woff");
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Medium.eot");
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Medium.ttf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Medium.woff");
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Regular.eot");
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Norms';
-  src: url("assets/fonts/TTNorms-Regular.woff");
-  font-weight: 400;
-}
-
 :root {
-  --dark-grey: #4B5D68;
+  --dark-grey: #4b5d68;
   --dark-purp: #212353;
-  --violet: #9C69E2;
-  --pink: #F063B8;
-  --green: #68C9BA;
-  --blue: ##2D9CDB
+  --violet: #9c69e2;
+  --pink: #f063b8;
+  --green: #68c9ba;
+  --blue: ##2d9cdb;
 }
-
 
 body {
   margin: 0 auto;
-  font: 500 18px/28.8px 'Norms';
-  background-color: #E5E5E5;
+  font: 500 18px/28.8px "Ubuntu";
+  background-color: #e5e5e5;
   color: var(--dark-grey);
-  
 }
 
 a {
@@ -86,24 +23,37 @@ a {
   max-width: 1600px;
   height: 100%;
   margin: 0 auto;
-  background: linear-gradient(#F6FAFD, #FFFFFF) ;
+  background: linear-gradient(#f6fafd, #ffffff);
   padding: 50px 0;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px 0;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 40px;
 }
 
-@media (max-width: 768px) {
-    .container {
-      padding: 30px 20px;
-    }
+@media (max-width: 992px) {
+  .container {
+    padding: 40px 30px;
+  }
 }
 
-.header-container {
-display: flex;
-padding-top: 15px;
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+  }
+}
+/*======================== header =============================*/
+.header__container {
+  display: flex;
+  padding-top: 15px;
 }
 
 .logo {
@@ -117,96 +67,73 @@ padding-top: 15px;
   margin-top: -5px;
 }
 
-@media (max-width: 768px) {
-  .logo {
-    margin-right: 30px;
-  }
-}
-
-.nav-list {
+.nav__list {
   display: flex;
   gap: 40px;
-  font: 500 16px/25px 'Norms';
+  font: 500 16px/25px "Ubuntu";
 }
 
-@media (max-width: 768px) {
-  .nav-list {
-    gap: 25px; 
-  }
-}
-
-.nav-item {
+.nav__item {
   display: flex;
 }
 
-
-.nav-list a:hover {
-  text-shadow: 0 0 .5px var(--dark-purp), 0 0 .5px var(--dark-purp);
+.nav__list a:hover {
+  text-shadow: 0 0 0.5px var(--dark-purp), 0 0 0.5px var(--dark-purp);
   color: var(--dark-purp);
 }
 
-.company-container {
+@media (max-width: 768px) {
+  .nav__list {
+    gap: 25px;
+  }
+}
+
+.section-title {
+  font: 700 40px/52px "Helvetica";
+  margin-bottom: 40px;
+  color: var(--dark-purp);
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font: 700 35px/48px "Helvetica";
+    margin-bottom: 20px;
+    color: var(--dark-purp);
+  }
+}
+
+@media (max-width: 425px) {
+  .section-title {
+    font: 700 30px/43px "Helvetica";
+    margin-bottom: 20px;
+    color: var(--dark-purp);
+  }
+}
+
+/* ============================== company ==========================*/
+
+.company__container {
   position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-@media (max-width: 1050px) {
-  .company-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 90px;
-  }
+  margin-bottom: 50px;
 }
 
 h1 {
-  font: 700 80px/88px 'Helvetica';
+  font: 700 80px/88px "Helvetica";
   color: var(--dark-purp);
   width: 60%;
   margin-bottom: 50px;
 }
-@media (max-width: 1050px) {
-  h1 {
-    font: 700 60px/66px 'Helvetica';
-    width: 70%;
-    margin-bottom: 20px;
-  }
-}
 
-@media (max-width: 768px) {
-  h1 {
-    font: 700 50px/54px 'Helvetica';
-    width: 100%;
-    margin-bottom: 20px;
-  } 
-}
-
-
-.company-text {
-  width: 33%;
+.company__text {
+  width: 34%;
   margin-bottom: 60px;
 }
 
-@media (max-width: 1050px) {
-  .company-text {
-    width: 43%;
-    margin-bottom: 60px;
-  }
-  
-}
-
-@media (max-width: 768px) {
-  .company-text {
-    width: 50%;
-    margin-bottom: 60px;
-  } 
-}
-
-a.company-btn {
+a.company__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,26 +141,149 @@ a.company-btn {
   height: 60px;
   background-color: var(--violet);
   border-radius: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.company-img {
- position: absolute;
- display: block;
+.company__img {
+  position: absolute;
+  display: block;
   bottom: 0;
   right: -8%;
   width: 74%;
-  
 }
 
 @media (max-width: 1430px) {
-  .company-img {
+  .company__img {
     position: absolute;
     display: block;
-     bottom: 0;
-     right: 2%;
-     width: 65%;
-     
-   }
+    bottom: 0;
+    right: 2%;
+    width: 65%;
+  }
 }
 
+@media (max-width: 1050px) {
+  .company__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    margin-bottom: 0px;
+  }
+  h1 {
+    font: 700 60px/66px "Helvetica";
+    width: 70%;
+    margin-bottom: 20px;
+  }
 
+  .company__text {
+    width: 43%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-right: 30px;
+  }
+  h1 {
+    font: 700 50px/54px "Helvetica";
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .company__text {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 650px) {
+  .company__container {
+    align-items: center;
+
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+  }
+  .company__img {
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+
+  a.company__btn {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .company__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font: 700 40px/44px "Helvetica";
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*============================= about =============================*/
+
+.about__container {
+  position: relative;
+}
+
+.about__bg {
+  max-width: 1117px;
+  background-color: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  padding: 120px 80px;
+}
+
+.about__content {
+  max-width: 52%;
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.about__first-p {
+  display: block;
+}
+
+.about__img {
+  position: absolute;
+  left: 5%;
+  top: 12%;
+  max-width: 50%;
+}
+
+@media (max-width: 992px) {
+  .about__bg {
+    padding: 70px 40px;
+  }
+
+  .about__img {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__bg {
+    padding: 50px 20px;
+  }
+
+  .about__content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .about__img {
+    position: relative;
+    bottom: 0;
+    min-width: 100%;
+  }
+}
