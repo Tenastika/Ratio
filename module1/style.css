@@ -18,8 +18,15 @@ a {
   transition: all 0.4s;
 }
 
+li {
+    list-style: none;
+}
+user agent stylesheet
+ {
+  display: none;
+}
+
 .wrapper {
- 
   max-width: 1600px;
   height: 100%;
   margin: 0 auto;
@@ -98,15 +105,12 @@ a {
   .section-title {
     font: 700 35px/48px "Helvetica";
     margin-bottom: 20px;
-    color: var(--dark-purp);
   }
 }
 
 @media (max-width: 425px) {
   .section-title {
     font: 700 30px/43px "Helvetica";
-    margin-bottom: 20px;
-    color: var(--dark-purp);
   }
 }
 
@@ -309,7 +313,6 @@ a.company__btn {
 }
 
 .card {
-  
   max-width: 50%;
   display: flex;
   gap: 35px;
@@ -319,16 +322,20 @@ a.company__btn {
 }
 
 .card:nth-child(1) {
-  background: url(./assets/features/img/card-bg1.png) right top / contain no-repeat;
+  background: url(./assets/features/img/card-bg1.png) right top / contain
+    no-repeat;
 }
 .card:nth-child(2) {
-  background: url(./assets/features/img/card-bg2.png) right top / contain no-repeat;
+  background: url(./assets/features/img/card-bg2.png) right top / contain
+    no-repeat;
 }
 .card:nth-child(3) {
-  background: url(./assets/features/img/card-bg3.png) right top / contain no-repeat;
+  background: url(./assets/features/img/card-bg3.png) right top / contain
+    no-repeat;
 }
 .card:nth-child(4) {
-  background: url(./assets/features/img/card-bg4.png) right top / contain no-repeat;
+  background: url(./assets/features/img/card-bg4.png) right top / contain
+    no-repeat;
 }
 
 .card__img {
@@ -352,9 +359,8 @@ a.company__btn {
 }
 
 .card__link {
-  
   margin-right: 10px;
- width: 130px;
+  width: 130px;
   margin-top: auto;
 }
 
@@ -374,7 +380,8 @@ a.company__btn {
   right: 0;
   width: 20px;
   height: 15px;
-  background: url(./assets/features/img/card-arrow.svg) center center / contain no-repeat;
+  background: url(./assets/features/img/card-arrow.svg) center center / contain
+    no-repeat;
 }
 
 @media (max-width: 1200px) {
@@ -387,7 +394,7 @@ a.company__btn {
     justify-content: space-between;
     align-self: center;
     min-width: 80%;
-   height: 450px;
+    height: 450px;
   }
 
   .card__img {
@@ -402,17 +409,13 @@ a.company__btn {
   }
 }
 @media (max-width: 992px) {
-  .card {  
-   height: 350px;
-}
- 
+  .card {
+    height: 350px;
+  }
 }
 @media (max-width: 768px) {
-
   .card {
-   
     min-width: 95%;
-   
   }
 
   .card__img {
@@ -422,23 +425,25 @@ a.company__btn {
 
   .card__info {
     max-width: 50%;
-    
-    
   }
 }
 
 @media (max-width: 600px) {
   .card:nth-child(1) {
-    background: url(./assets/features/img/card-bg1.png) right bottom / contain no-repeat;
+    background: url(./assets/features/img/card-bg1.png) right bottom / contain
+      no-repeat;
   }
   .card:nth-child(2) {
-    background: url(./assets/features/img/card-bg2.png) right bottom / contain no-repeat;
+    background: url(./assets/features/img/card-bg2.png) right bottom / contain
+      no-repeat;
   }
   .card:nth-child(3) {
-    background: url(./assets/features/img/card-bg3.png) right bottom / contain no-repeat;
+    background: url(./assets/features/img/card-bg3.png) right bottom / contain
+      no-repeat;
   }
   .card:nth-child(4) {
-    background: url(./assets/features/img/card-bg4.png) right bottom / contain no-repeat;
+    background: url(./assets/features/img/card-bg4.png) right bottom / contain
+      no-repeat;
   }
 
   .features__cards {
@@ -447,11 +452,11 @@ a.company__btn {
 
   .card {
     height: 100%;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     min-width: 95%;
-   padding: 10px 10px 30px 10px;
-   justify-content: center;
-   text-align: end;
+    padding: 10px 10px 30px 10px;
+    justify-content: center;
+    text-align: end;
   }
 
   .card__img {
@@ -466,16 +471,15 @@ a.company__btn {
   }
 
   .card__link {
-   
-     margin-top: auto;
-     margin-left: auto;
-   }
+    margin-top: auto;
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 425px) {
   .card {
     height: 90%;
-   gap: 0;
+    gap: 0;
   }
 }
 
@@ -484,14 +488,12 @@ a.company__btn {
 .testimonials {
   overflow: hidden;
 }
-.testimonials__container {
-}
 
 .testimonials__bg {
   background-color: var(--violet);
   max-width: 1118px;
   border-radius: 50px;
-  padding: 110px 90px 60px 90px; 
+  padding: 110px 90px 60px 90px;
 }
 
 .testimonials__title {
@@ -499,25 +501,17 @@ a.company__btn {
   margin-bottom: 100px;
 }
 
-.testimonials__slider {
-}
-
-.container {
-}
-.section-title {
-}
 .slider {
- position: relative;
- display: flex; 
+  position: relative;
+  display: flex;
   height: 400px;
-  
 }
 
 .slider__wrapper {
   position: absolute;
- display: flex;
- flex-wrap: nowrap;
- align-items: stretch;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 .slide {
   position: relative;
@@ -529,7 +523,7 @@ a.company__btn {
   padding: 55px 55px 55px 40px;
   margin-right: 20px;
   border: 1px solid var(--violet);
-  box-shadow: 0 20px 0 0  rgba(81, 53, 121, 0.1);
+  box-shadow: 0 20px 0 0 rgba(81, 53, 121, 0.1);
 }
 
 .slide::after {
@@ -546,17 +540,11 @@ a.company__btn {
 .slide._active {
   width: 645px;
   padding: 60px 67px 50px 70px;
-  box-shadow: 0 20px 0 0  rgba(61, 40, 90, 0.294);
+  box-shadow: 0 20px 0 0 rgba(61, 40, 90, 0.294);
 }
 
 .slide._active::after {
   display: none;
-}
-
-.slide__img {
-}
-
-.slide__content {
 }
 
 .slide__title {
@@ -579,7 +567,7 @@ a.company__btn {
   display: flex;
   justify-content: space-between;
   width: 90%;
-margin: auto auto 0;
+  margin: auto auto 0;
 }
 
 .slider__pang {
@@ -587,19 +575,19 @@ margin: auto auto 0;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  width: 60px; 
+  width: 60px;
 }
 .pang {
   width: 5px;
   height: 5px;
-  background-color: #fff; 
+  background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
 }
-.pang._active{
+.pang._active {
   width: 10px;
   height: 10px;
-  background-color: var(--pink); 
+  background-color: var(--pink);
   border-radius: 50%;
 }
 .slider__navig {
@@ -608,13 +596,15 @@ margin: auto auto 0;
   width: 80px;
 }
 .prev {
-  background: url(./assets/testimonials/img/slide-ar-prev.svg)center center / contain no-repeat;
+  background: url(./assets/testimonials/img/slide-ar-prev.svg) center center /
+    contain no-repeat;
   width: 40px;
   height: 15px;
   cursor: pointer;
 }
 .next {
-  background: url(./assets/testimonials/img/slide-ar-next.svg)center center / contain no-repeat;
+  background: url(./assets/testimonials/img/slide-ar-next.svg) center center /
+    contain no-repeat;
   width: 20px;
   height: 15px;
   cursor: pointer;
@@ -622,16 +612,16 @@ margin: auto auto 0;
 
 @media (max-width: 992px) {
   .testimonials__bg {
-    padding: 80px 50px 40px ; 
+    padding: 80px 50px 40px;
   }
 }
 
 @media (max-width: 768px) {
   .slide._active {
-    padding:30px 20px ;  
+    padding: 30px 20px;
   }
   .testimonials__bg {
-    padding: 50px 20px 30px ; 
+    padding: 50px 20px 30px;
   }
 }
 
@@ -639,6 +629,7 @@ margin: auto auto 0;
   .slide {
     flex-direction: column;
     max-width: 240px;
+    gap: 10px;
   }
 
   .section-title {
@@ -647,11 +638,95 @@ margin: auto auto 0;
 
   .slider {
     position: relative;
-    display: flex; 
-     height: 550px;
-     
-   }
-  
+    display: flex;
+    height: 530px;
+  }
 }
-  
 
+/*=================================== footer =========================*/
+
+.footer {
+  border-top: 2px solid #9b69e22f;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 160px;
+  color: var(--dark-purp);
+}
+
+.contacts {
+  max-width: 300px;
+}
+.contacts__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.contacts__logo {
+  margin-right: 20px;
+}
+
+.contacts__name {
+  font: 900 20px/32px "Ubuntu";
+}
+
+.contacts__list {
+  font: 500 16px/28px "Ubuntu";
+}
+
+.contacts__list li {
+  margin-bottom: 30px;
+}
+
+.contacts__list span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts__addres {
+  font: 500 16px/28px "Ubuntu";
+}
+
+.contacts__mail {
+  font: 400 16px/28px "Ubuntu";
+}
+
+.contacts__copirate {
+  font: 400 12px/21px "Ubuntu";
+}
+
+.social {
+  max-width: 300px;
+  margin-right: 10%;
+  padding-top: 10px;
+}
+.social__title {
+  display: block;
+  font: 900 16px/25px "Ubuntu";
+  margin-bottom: 30px;
+}
+
+.social__list {
+  display: flex;
+  gap: 15px;
+}
+
+.social__link{
+  background-color: #21235321;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+
+@media (max-width: 600px) {
+  .footer__container {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+}
