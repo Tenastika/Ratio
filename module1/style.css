@@ -9,6 +9,8 @@
 
 body {
   margin: 0 auto;
+/* TODO: не используйте дробные пиксели, пиксель как точка, разные браузеры по-разному обрабатывают дробные пиксели
+     это может привести разному отображению сайта на разных браузерах, и верстка может даже "поехать" */
   font: 500 18px/28.8px "Ubuntu";
   background-color: #e5e5e5;
   color: var(--dark-grey);
@@ -21,6 +23,7 @@ a {
 li {
     list-style: none;
 }
+/*TODO: некорректный селектор, поменяйте или удалите */
 user agent stylesheet
  {
   display: none;
@@ -85,6 +88,7 @@ user agent stylesheet
 }
 
 .nav__list a:hover {
+/* TODO: снова дробные пиксели */
   text-shadow: 0 0 0.5px var(--dark-purp), 0 0 0.5px var(--dark-purp);
   color: var(--dark-purp);
 }
@@ -148,8 +152,8 @@ a.company__btn {
   color: #ffffff;
 }
 
-a.company__btn:hover { 
-  background-color: var(--pink); 
+a.company__btn:hover {
+  background-color: var(--pink);
 }
 
 .company__img {
@@ -177,6 +181,7 @@ a.company__btn:hover {
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 90px;
+/* TODO: нет необходимости указывать единицы измерения для нуля 0px -> 0 */
     margin-bottom: 0px;
   }
   h1 {
@@ -212,6 +217,7 @@ a.company__btn:hover {
   .company__container {
     align-items: center;
     padding-bottom: 40px;
+/* TODO: нет необходимости указывать единицы измерения для нуля 0px -> 0 */
     margin-bottom: 0px;
   }
   .company__img {
@@ -277,6 +283,7 @@ a.company__btn:hover {
 
   .about__img {
     position: absolute;
+/* TODO: нет необходимости указывать единицы измерения для нуля 0% -> 0 */
     left: 0%;
     top: 10%;
   }
@@ -380,7 +387,7 @@ a.company__btn:hover {
 }
 
 .card__link-txt:hover {
-  color: var(--violet);  
+  color: var(--violet);
 }
 
 .card__link-txt::after {
